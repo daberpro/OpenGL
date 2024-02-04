@@ -22,6 +22,8 @@ int main(){
         exit(EXIT_FAILURE);
     }
 
+    std::cout << "OpenGL Version " << glGetString(GL_VERSION) << "\n";
+
     GLuint shader = createShader(
         __current_path+"/../Shader/StandardVertexShader.glsl",
         __current_path+"/../Shader/StandardFragmentShader.glsl"
