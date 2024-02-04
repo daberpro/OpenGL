@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.27.2)
 project(Main VERSION 1.0.0)
 
-add_executable(${PROJECT_NAME} Main.cpp)
+add_executable(${PROJECT_NAME} Main.cpp Headers/fileReader.h Headers/Shader.h)
 message("Check Dependencies")
 
 set(CMAKE_CXX_STANDARD 20)
