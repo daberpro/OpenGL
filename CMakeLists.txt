@@ -10,7 +10,7 @@ set(CMAKE_CXX_FLAGS -static-libstdc++)
 set(all_dependencies glfw3 GLEW)
 
 foreach(package IN LISTS all_dependencies)
-    find_package(${package} REQUIRED PATHS /Dependencies)  
+    find_package(${package} REQUIRED PATHS "${PROJECT_SOURCE_DIR}\\Dependencies")  
     if(${package}_FOUND)
         message("FOUND ${package} VERSION ${${package}_VERSION}")
     endif()
